@@ -1,1 +1,110 @@
-
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 2499,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+    "description": "Premium wireless headphones with comfortable design and immersive sound.",
+    "stock": 25
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 3299,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
+    "description": "Modern smartwatch with fitness tracking and smart notifications.",
+    "stock": 18
+  },
+  {
+    "id": 3,
+    "name": "Running Shoes",
+    "price": 1899,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+    "description": "Lightweight running shoes designed for everyday comfort.",
+    "stock": 30
+  },
+  {
+    "id": 4,
+    "name": "Travel Backpack",
+    "price": 1599,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80",
+    "description": "Durable travel backpack with multiple compartments.",
+    "stock": 20
+  },
+  {
+    "id": 5,
+    "name": "Classic Sunglasses",
+    "price": 999,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80",
+    "description": "Classic sunglasses with a stylish everyday design.",
+    "stock": 40
+  },
+  {
+    "id": 6,
+    "name": "Laptop",
+    "price": 54999,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+    "description": "Powerful laptop for work, study and entertainment.",
+    "stock": 10
+  },
+  {
+    "id": 7,
+    "name": "Coffee Mug",
+    "price": 499,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=80",
+    "description": "Elegant ceramic coffee mug for your everyday drinks.",
+    "stock": 50
+  },
+  {
+    "id": 8,
+    "name": "Premium T-Shirt",
+    "price": 799,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+    "description": "Comfortable premium cotton T-shirt.",
+    "stock": 35
+  },
+  {
+    "id": 9,
+    "name": "Mechanical Keyboard",
+    "price": 2999,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80",
+    "description": "Mechanical keyboard with responsive keys and modern styling.",
+    "stock": 15
+  },
+  {
+    "id": 10,
+    "name": "Desk Lamp",
+    "price": 1299,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80",
+    "description": "Minimal desk lamp for study and workspaces.",
+    "stock": 22
+  },
+  {
+    "id": 11,
+    "name": "Travel Bottle",
+    "price": 699,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
+    "description": "Reusable travel bottle with a clean modern design.",
+    "stock": 45
+  },
+  {
+    "id": 12,
+    "name": "Denim Jacket",
+    "price": 2199,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=80",
+    "description": "Classic denim jacket suitable for casual outfits.",
+    "stock": 16
+  }
+]

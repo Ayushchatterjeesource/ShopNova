@@ -1,0 +1,21 @@
+{
+  "name": "shopnova",
+  "version": "1.0.0",
+  "description": "ShopNova Full-Stack E-Commerce Product Catalog",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "shopnova",
+    "fullstack",
+    "express"
+  ],
+  "author": "Ayush Chatterjee",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

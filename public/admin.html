@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ShopNova Admin</title>
-
     <link rel="stylesheet" href="admin.css">
 </head>
-
 <body>
 
-    <!-- =========================
-         LOGIN PAGE
-    ========================== -->
+    <!-- LOGIN SECTION -->
     <section id="loginSection" class="login-section">
-
         <div class="login-card">
 
-            <div class="login-brand">
-                <h1>ShopNova</h1>
-                <p>Admin Panel</p>
+            <div class="login-header">
+                <div class="admin-logo">S</div>
+                <div>
+                    <h1>ShopNova</h1>
+                    <p>Admin Panel</p>
+                </div>
             </div>
 
             <form id="loginForm">
 
                 <div class="form-group">
-                    <label for="loginIdentifier">
-                        Username or Email
-                    </label>
-
+                    <label for="loginIdentifier">Username or Email</label>
                     <input
                         type="text"
                         id="loginIdentifier"
@@ -39,10 +33,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="loginPassword">
-                        Password
-                    </label>
-
+                    <label for="loginPassword">Password</label>
                     <input
                         type="password"
                         id="loginPassword"
@@ -59,82 +50,61 @@
 
             </form>
 
-            <a href="/" class="back-link">
-                ← Back to ShopNova
-            </a>
+            <a href="/" class="back-link">← Back to Store</a>
 
         </div>
-
     </section>
 
 
-    <!-- =========================
-         ADMIN DASHBOARD
-    ========================== -->
+    <!-- DASHBOARD SECTION -->
     <section id="dashboardSection" class="dashboard-section hidden">
 
-        <!-- Header -->
         <header class="admin-header">
 
-            <div>
-                <h1>ShopNova Admin</h1>
-                <p>Manage your products and store</p>
+            <div class="brand">
+                <h1>ShopNova</h1>
+                <span>Admin Dashboard</span>
             </div>
 
             <div class="header-actions">
-                <a href="/" class="secondary-btn">
-                    View Store
-                </a>
-
-                <button id="logoutBtn" class="logout-btn">
-                    Logout
-                </button>
+                <a href="/" class="secondary-btn">View Store</a>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
             </div>
 
         </header>
 
 
-        <!-- Main Content -->
         <main class="admin-container">
 
-            <!-- =========================
-                 STATISTICS
-            ========================== -->
+            <!-- STAT CARDS -->
             <section class="stats-grid">
 
                 <div class="stat-card">
                     <div class="stat-icon">📦</div>
-
                     <div>
                         <p>Total Products</p>
                         <h2 id="totalProducts">0</h2>
                     </div>
                 </div>
 
-
                 <div class="stat-card">
-                    <div class="stat-icon">💰</div>
-
+                    <div class="stat-icon">📊</div>
                     <div>
                         <p>Total Stock</p>
                         <h2 id="totalStock">0</h2>
                     </div>
                 </div>
 
-
                 <div class="stat-card">
                     <div class="stat-icon">🏷️</div>
-
                     <div>
                         <p>Categories</p>
                         <h2 id="totalCategories">0</h2>
                     </div>
                 </div>
 
-
                 <div class="stat-card">
-                    <div class="stat-icon">⚡</div>
-
+                    <div class="stat-icon">⚠️</div>
                     <div>
                         <p>Low Stock</p>
                         <h2 id="lowStock">0</h2>
@@ -144,60 +114,34 @@
             </section>
 
 
-            <!-- =========================
-                 PRODUCT FORM
-            ========================== -->
+            <!-- PRODUCT FORM -->
             <section class="admin-card">
 
-                <div class="section-heading">
-
+                <div class="section-header">
                     <div>
-                        <h2 id="formTitle">
-                            Add New Product
-                        </h2>
-
-                        <p>
-                            Create or update products in your catalog.
-                        </p>
+                        <h2 id="formTitle">Add New Product</h2>
+                        <p>Create or update products in your catalog.</p>
                     </div>
-
                 </div>
-
 
                 <form id="productForm">
 
-                    <input
-                        type="hidden"
-                        id="productId"
-                    >
-
+                    <input type="hidden" id="productId">
 
                     <div class="form-grid">
 
-                        <!-- Product Name -->
                         <div class="form-group">
-
-                            <label for="productName">
-                                Product Name
-                            </label>
-
+                            <label for="productName">Product Name</label>
                             <input
                                 type="text"
                                 id="productName"
                                 placeholder="Enter product name"
                                 required
                             >
-
                         </div>
 
-
-                        <!-- Price -->
                         <div class="form-group">
-
-                            <label for="productPrice">
-                                Price
-                            </label>
-
+                            <label for="productPrice">Price</label>
                             <input
                                 type="number"
                                 id="productPrice"
@@ -206,82 +150,51 @@
                                 step="0.01"
                                 required
                             >
-
                         </div>
 
-
-                        <!-- Category -->
                         <div class="form-group">
-
-                            <label for="productCategory">
-                                Category
-                            </label>
-
+                            <label for="productCategory">Category</label>
                             <input
                                 type="text"
                                 id="productCategory"
                                 placeholder="e.g. Electronics"
                                 required
                             >
-
                         </div>
 
-
-                        <!-- Stock -->
                         <div class="form-group">
-
-                            <label for="productStock">
-                                Stock
-                            </label>
-
+                            <label for="productStock">Stock</label>
                             <input
                                 type="number"
                                 id="productStock"
-                                placeholder="Enter stock quantity"
+                                placeholder="Enter stock"
                                 min="0"
                                 required
                             >
-
                         </div>
 
-
-                        <!-- Image URL -->
                         <div class="form-group full-width">
-
-                            <label for="productImage">
-                                Image URL
-                            </label>
-
+                            <label for="productImage">Image URL</label>
                             <input
                                 type="url"
                                 id="productImage"
                                 placeholder="https://example.com/image.jpg"
                                 required
                             >
-
                         </div>
 
-
-                        <!-- Description -->
                         <div class="form-group full-width">
-
-                            <label for="productDescription">
-                                Description
-                            </label>
-
+                            <label for="productDescription">Description</label>
                             <textarea
                                 id="productDescription"
                                 rows="5"
                                 placeholder="Enter product description"
                                 required
                             ></textarea>
-
                         </div>
 
                     </div>
 
-
-                    <!-- Form Buttons -->
                     <div class="form-actions">
 
                         <button
@@ -302,7 +215,6 @@
 
                     </div>
 
-
                     <p id="productMessage" class="message"></p>
 
                 </form>
@@ -310,19 +222,14 @@
             </section>
 
 
-            <!-- =========================
-                 PRODUCT MANAGEMENT
-            ========================== -->
+            <!-- MANAGE PRODUCTS -->
             <section class="admin-card">
 
-                <div class="section-heading">
+                <div class="section-header">
 
                     <div>
                         <h2>Manage Products</h2>
-
-                        <p>
-                            View, edit or remove products.
-                        </p>
+                        <p>View, edit or remove products.</p>
                     </div>
 
                     <button
@@ -334,70 +241,43 @@
 
                 </div>
 
-
-                <!-- Products Table -->
                 <div class="table-wrapper">
 
                     <table class="products-table">
 
                         <thead>
-
                             <tr>
-
                                 <th>Product</th>
-
                                 <th>Category</th>
-
                                 <th>Price</th>
-
                                 <th>Stock</th>
-
                                 <th>Actions</th>
-
                             </tr>
-
                         </thead>
 
-
                         <tbody id="productsTableBody">
-
-                            <!-- Products will load here -->
-
                         </tbody>
 
                     </table>
 
                 </div>
 
-                <p
-                    id="tableMessage"
-                    class="message"
-                ></p>
+                <p id="tableMessage" class="message"></p>
 
             </section>
 
         </main>
 
 
-        <!-- =========================
-             FOOTER
-        ========================== -->
+        <!-- FOOTER -->
         <footer class="admin-footer">
-
-            <p>
-                This app is made by Ayush Chatterjee
-            </p>
-
-            <p>
-                © 2026. All rights reserved.
-            </p>
-
+            <p>This app is made by Ayush Chatterjee</p>
+            <p>© 2026. All rights reserved.</p>
         </footer>
 
     </section>
 
 
-    <!-- Admin JavaScript -->
     <script src="admin.js"></script>
 
 </body>

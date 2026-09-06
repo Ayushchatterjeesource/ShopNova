@@ -1,284 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopNova Admin</title>
-    <link rel="stylesheet" href="admin.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        ShopNova Admin Panel
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
 </head>
+
+
 <body>
 
-    <!-- LOGIN SECTION -->
-    <section id="loginSection" class="login-section">
-        <div class="login-card">
 
-            <div class="login-header">
-                <div class="admin-logo">S</div>
-                <div>
-                    <h1>ShopNova</h1>
-                    <p>Admin Panel</p>
-                </div>
-            </div>
+<div id="loginPage" class="login-page">
 
-            <form id="loginForm">
+    <div class="login-card">
 
-                <div class="form-group">
-                    <label for="loginIdentifier">Username or Email</label>
-                    <input
-                        type="text"
-                        id="loginIdentifier"
-                        placeholder="Enter username or email"
-                        required
-                    >
-                </div>
+        <div class="admin-logo">
+            Shop<span>Nova</span>
+        </div>
 
-                <div class="form-group">
-                    <label for="loginPassword">Password</label>
-                    <input
-                        type="password"
-                        id="loginPassword"
-                        placeholder="Enter password"
-                        required
-                    >
-                </div>
+        <p class="login-subtitle">
+            Admin Dashboard
+        </p>
 
-                <button type="submit" class="primary-btn">
-                    Login
-                </button>
 
-                <p id="loginMessage" class="message"></p>
+        <form id="loginForm">
 
-            </form>
+            <label>
+                Username or Email
+            </label>
 
-            <a href="/" class="back-link">← Back to Store</a>
+            <input
+                type="text"
+                id="loginValue"
+                placeholder="admin or admin@shopnova.com"
+                required
+            >
+
+
+            <label>
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter password"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="primary-btn"
+            >
+                Login
+            </button>
+
+        </form>
+
+
+        <p
+            id="loginMessage"
+            class="message"
+        ></p>
+
+
+                Username: admin
+            </p>
+
+            <p>
+                Email: admin@shopnova.com
+            </p>
+
+            <p>
+                Password: 1234
+            </p>
 
         </div>
-    </section>
 
 
-    <!-- DASHBOARD SECTION -->
-    <section id="dashboardSection" class="dashboard-section hidden">
+        <a
+            href="/"
+            class="back-store"
+        >
+            ← Back to Shop
+        </a>
 
-        <header class="admin-header">
+    </div>
 
-            <div class="brand">
-                <h1>ShopNova</h1>
-                <span>Admin Dashboard</span>
+</div>
+
+
+<div
+    id="dashboardPage"
+    class="dashboard-page hidden"
+>
+
+
+    <header class="admin-header">
+
+        <div class="admin-header-inner">
+
+            <div class="admin-logo">
+                Shop<span>Nova</span>
             </div>
 
             <div class="header-actions">
-                <a href="/" class="secondary-btn">View Store</a>
-                <button id="logoutBtn" class="logout-btn">Logout</button>
+
+                <a
+                    href="/"
+                    class="store-btn"
+                >
+                    View Store
+                </a>
+
+                <button
+                    id="logoutBtn"
+                    class="logout-btn"
+                >
+                    Logout
+                </button>
+
             </div>
 
-        </header>
+        </div>
+
+    </header>
 
 
-        <main class="admin-container">
+    <main class="admin-container">
 
-            <!-- STAT CARDS -->
-            <section class="stats-grid">
 
-                <div class="stat-card">
-                    <div class="stat-icon">📦</div>
-                    <div>
-                        <p>Total Products</p>
-                        <h2 id="totalProducts">0</h2>
-                    </div>
+        <div class="dashboard-title">
+
+            <div>
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+                <p>
+                    Manage your ShopNova products.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <span>
+                    Total Products
+                </span>
+
+                <strong id="totalProducts">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Total Stock
+                </span>
+
+                <strong id="totalStock">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Categories
+                </span>
+
+                <strong id="totalCategories">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADD PRODUCT -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Add Product
+                    </h2>
+
+                    <p>
+                        Add a new product to ShopNova.
+                    </p>
+
                 </div>
 
-                <div class="stat-card">
-                    <div class="stat-icon">📊</div>
-                    <div>
-                        <p>Total Stock</p>
-                        <h2 id="totalStock">0</h2>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon">🏷️</div>
-                    <div>
-                        <p>Categories</p>
-                        <h2 id="totalCategories">0</h2>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-icon">⚠️</div>
-                    <div>
-                        <p>Low Stock</p>
-                        <h2 id="lowStock">0</h2>
-                    </div>
-                </div>
-
-            </section>
+            </div>
 
 
-            <!-- PRODUCT FORM -->
-            <section class="admin-card">
+            <form id="productForm">
 
-                <div class="section-header">
-                    <div>
-                        <h2 id="formTitle">Add New Product</h2>
-                        <p>Create or update products in your catalog.</p>
-                    </div>
-                </div>
+                <input
+                    type="hidden"
+                    id="productId"
+                >
 
-                <form id="productForm">
 
-                    <input type="hidden" id="productId">
+                <div class="form-grid">
 
-                    <div class="form-grid">
 
-                        <div class="form-group">
-                            <label for="productName">Product Name</label>
-                            <input
-                                type="text"
-                                id="productName"
-                                placeholder="Enter product name"
-                                required
-                            >
-                        </div>
+                    <div class="form-group">
 
-                        <div class="form-group">
-                            <label for="productPrice">Price</label>
-                            <input
-                                type="number"
-                                id="productPrice"
-                                placeholder="Enter price"
-                                min="0"
-                                step="0.01"
-                                required
-                            >
-                        </div>
+                        <label>
+                            Product Name
+                        </label>
 
-                        <div class="form-group">
-                            <label for="productCategory">Category</label>
-                            <input
-                                type="text"
-                                id="productCategory"
-                                placeholder="e.g. Electronics"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="productStock">Stock</label>
-                            <input
-                                type="number"
-                                id="productStock"
-                                placeholder="Enter stock"
-                                min="0"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label for="productImage">Image URL</label>
-                            <input
-                                type="url"
-                                id="productImage"
-                                placeholder="https://example.com/image.jpg"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label for="productDescription">Description</label>
-                            <textarea
-                                id="productDescription"
-                                rows="5"
-                                placeholder="Enter product description"
-                                required
-                            ></textarea>
-                        </div>
-
-                    </div>
-
-                    <div class="form-actions">
-
-                        <button
-                            type="submit"
-                            id="saveProductBtn"
-                            class="primary-btn"
+                        <input
+                            type="text"
+                            id="productName"
+                            placeholder="Product name"
+                            required
                         >
-                            Add Product
-                        </button>
 
-                        <button
-                            type="button"
-                            id="cancelEditBtn"
-                            class="secondary-btn hidden"
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Price
+                        </label>
+
+                        <input
+                            type="number"
+                            id="productPrice"
+                            placeholder="Price"
+                            min="0"
+                            required
                         >
-                            Cancel Edit
-                        </button>
 
                     </div>
 
-                    <p id="productMessage" class="message"></p>
 
-                </form>
+                    <div class="form-group">
 
-            </section>
+                        <label>
+                            Category
+                        </label>
 
+                        <input
+                            type="text"
+                            id="productCategory"
+                            placeholder="Electronics"
+                            required
+                        >
 
-            <!-- MANAGE PRODUCTS -->
-            <section class="admin-card">
-
-                <div class="section-header">
-
-                    <div>
-                        <h2>Manage Products</h2>
-                        <p>View, edit or remove products.</p>
                     </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Stock
+                        </label>
+
+                        <input
+                            type="number"
+                            id="productStock"
+                            placeholder="Stock"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Image URL
+                        </label>
+
+                        <input
+                            type="url"
+                            id="productImage"
+                            placeholder="https://..."
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Description
+                        </label>
+
+                        <textarea
+                            id="productDescription"
+                            placeholder="Product description"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
 
                     <button
-                        id="refreshProductsBtn"
-                        class="secondary-btn"
+                        type="submit"
+                        class="primary-btn"
+                        id="submitProductBtn"
                     >
-                        Refresh
+                        Add Product
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="cancel-btn hidden"
+                        id="cancelEditBtn"
+                    >
+                        Cancel Edit
                     </button>
 
                 </div>
 
-                <div class="table-wrapper">
 
-                    <table class="products-table">
+                <p
+                    id="productMessage"
+                    class="message"
+                ></p>
 
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Category</th>
-                                <th>Price</th>
-                                <th>Stock</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
+            </form>
 
-                        <tbody id="productsTableBody">
-                        </tbody>
+        </section>
 
-                    </table>
+
+        <!-- PRODUCT LIST -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Manage Products
+                    </h2>
+
+                    <p>
+                        Edit or delete existing products.
+                    </p>
 
                 </div>
 
-                <p id="tableMessage" class="message"></p>
-
-            </section>
-
-        </main>
+            </div>
 
 
-        <!-- FOOTER -->
-        <footer class="admin-footer">
-            <p>This app is made by Ayush Chatterjee</p>
-            <p>© 2026. All rights reserved.</p>
-        </footer>
+            <div
+                id="adminProducts"
+                class="admin-products"
+            ></div>
 
-    </section>
+        </section>
 
 
-    <script src="admin.js"></script>
+    </main>
+
+
+    <footer class="admin-footer">
+
+        <p>
+            This app is made by Ayush Chatterjee
+        </p>
+
+        <p>
+            © 2026. All rights reserved.
+        </p>
+
+    </footer>
+
+
+</div>
+
+
+<script src="admin.js"></script>
 
 </body>
+
 </html>
